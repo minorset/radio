@@ -11,26 +11,26 @@
   <link rel="apple-touch-icon" sizes="167x167" href="icons/icon-167.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
   <meta name="description" content="Stream radios in your web browser" />
-  <title>That Radio</title>
+  <title>alfthan radio</title>
 
   <style>
     body {
-      background-color: black;
+      background-color: rgb(255, 255, 255);
       font: 17pt/2em system-ui;
-      color: #ddd;
+      color: #333333;
     }
 
     h1 {
       margin-left: 22px;
       font: bold 34pt;
-      color: white;
+      color: rgb(0, 0, 0);
     }
 
     .line {
       position: absolute;
       top: 180px;
       left:-2px;
-      border: 1px dashed #d00;
+      border: 1px dashed rgb(177, 221, 0);
       width: 100%;
     }
 
@@ -42,12 +42,12 @@
 
     a {
       text-decoration: none;
-      color: #ddd;
+      color: #000000;
     }
 
     #stop {
       font-size: 20pt;
-      color: #ccc;
+      color: #a4a4a4;
       position: absolute;
       top: 102px;
       left: 280px;
@@ -55,7 +55,7 @@
 
     #radio {
       font-size: 20pt;
-      color: #d00;
+      color: rgb(0, 0, 0);
       position: absolute;
       top: 102px;
       left: 54px;
@@ -74,7 +74,7 @@
         document.getElementById('radio').innerHTML = station; // Show current radio
         document.getElementById('stop').innerHTML = "■"; // Show stop button
 
-        document.getElementById(id).style.color = 'white'; // Highlight current radio
+        document.getElementById(id).style.color = '#a4a4a4'; // Highlight current radio
         if (typeof previousid != 'undefined') { // If you're switching from one radio to another
           document.getElementById(previousid).style.color = null; // Remove previous highlight
         }
@@ -89,7 +89,7 @@
 </head>
 <body>
 
-  <h1>Radio</h1>
+  <h1></h1>
 
   <!-- Player controls -->
   <a href="#" id="stop" onclick="player('data:audio/wav;base64,0',0);"></a>
