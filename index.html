@@ -54,8 +54,19 @@
       color: #ffffff;
       position: absolute;
       top: 102px;
-      left: 300px;
     }
+
+    @media (max-width: 420px) {
+                #stop {
+                  right: 40px;
+                }
+            }
+    
+  @media (min-width: 421px) {
+                #stop {
+                  left: 300px;
+                }
+            }
 
     #radio {
       font-size: 16pt;
@@ -135,10 +146,11 @@
 <body>
 
   <div class="header">
-
+    <div class="controls">
     <!-- Player controls -->
     <a href="#" id="stop" onclick="player('data:audio/wav;base64,0',0);"></a>
     <b id="radio"></b>
+    </div>
 
     <br/>
 
